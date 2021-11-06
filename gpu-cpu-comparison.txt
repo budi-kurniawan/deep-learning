@@ -1,0 +1,9 @@
+Server A: Intel i9 7900, GPU 1060 TI
+Server B: code Titan
+NN architecture: See https://github.com/budi-kurniawan/deep-learning/blob/main/mnist-torch-gpu.py
+
+Pytorch MNIST training, 2 hidden network
+Server A: 311 seconds (CPU), 108 seconds (GPU), both with loss around 0.02 and accuracy >99%
+Server B: 1366 seconds (CPU), 226 seconds (GPU), both with loss around 0.02 and accuracy >99%
+
+Conclusion: training with GPU is faster even for relatively small NNs.
